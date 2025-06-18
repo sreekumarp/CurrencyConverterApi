@@ -51,9 +51,6 @@ Apply this ```Bearer <token>``` in `Authorization` Header (Can use Swagger Autho
 
 1. The Frankfurter API is the primary data source
 2. Restricted currencies (TRY, PLN, THB, MXN) are not allowed in any conversion
-3. JWT tokens are issued by an external identity provider
-4. Redis is used for distributed caching
-5. SQL Server is used for storing user data and audit logs
 
 ## Future Enhancements
 
