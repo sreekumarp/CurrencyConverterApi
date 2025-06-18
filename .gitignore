@@ -1,0 +1,63 @@
+## Ignore build outputs
+bin/
+obj/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## Rider & VSCode IDEs
+.idea/
+.vscode/
+
+
+## Visual Studio temporary files
+.vs/
+
+## NuGet packages
+*.nupkg
+# Packages folder used for some old-style projects
+packages/
+# NuGet v3 files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## ASP.NET Core generated files
+wwwroot/
+
+
+## Logs
+*.log
+Logs/
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+## Resharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+## DotCover
+*.dotCover
+
+## Build Reports
+BuildReports/
+
+## Publish output
+publish/
+
+## Docker files
+docker-compose.override.yml
+
+## Python cache (if Python scripts are used)
+__pycache__/

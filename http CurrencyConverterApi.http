@@ -1,0 +1,33 @@
+@CurrencyConverterApi_HostAddress = http://localhost:5008
+
+###
+# Get latest exchange rates (default base: EUR)
+GET {{CurrencyConverterApi_HostAddress}}/api/v1/exchange-rates/latest
+Accept: application/json
+##Authorization: Bearer YOUR_TOKEN_HERE
+###
+# Get latest exchange rates (custom base: USD)
+GET {{CurrencyConverterApi_HostAddress}}/api/v1/exchange-rates/latest?baseCurrency=USD
+Accept: application/json
+
+###
+# Convert currency (sample: 100 EUR to USD)
+POST {{CurrencyConverterApi_HostAddress}}/api/v1/exchange-rates/convert
+Content-Type: application/json
+Accept: application/json
+
+{
+  "fromCurrency": "EUR",
+  "toCurrency": "USD",
+  "amount": 100
+}
+
+###
+# Get historical exchange rates (last 7 days, default base: EUR)
+GET {{CurrencyConverterApi_HostAddress}}/api/v1/exchange-rates/historical?startDate=2025-06-10&endDate=2025-06-17&page=1&pageSize=5
+Accept: application/json
+
+###
+# Get historical exchange rates (custom base: GBP, custom paging)
+GET {{CurrencyConverterApi_HostAddress}}/api/v1/exchange-rates/historical?baseCurrency=GBP&startDate=2025-05-01&endDate=2025-05-31&page=2&pageSize=10
+Accept: application/json
