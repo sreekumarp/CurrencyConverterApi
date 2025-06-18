@@ -10,7 +10,7 @@ currency conversion api.
    ```bash
    dotnet restore
    dotnet build
-   dotnet run --launch-profile https 
+   dotnet run --project Api --launch-profile https 
    ```
   - Swagger: https://localhost:7116
 
@@ -25,9 +25,13 @@ Admin User:
 
 Pass above to the `/auth/login` end point to get token.
 
+Apply this ```Bearer <token>``` in `Authorization` Header (Can use Swagger Authorize feature)
 
 ### Latest Exchange Rates
 - GET `/api/v1/exchange-rates/latest?baseCurrency=EUR`
+
+## Unit Test
+```dotnet test CurrencyConverterApi.Tests/CurrencyConverterApi.Tests.csproj```
 
 ### Currency Conversion
 - POST `/api/v1/exchange-rates/convert`
