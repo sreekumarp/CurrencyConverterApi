@@ -10,13 +10,21 @@ currency conversion api.
    ```bash
    dotnet restore
    dotnet build
-   dotnet run
+   dotnet run --launch-profile https 
    ```
+  - Swagger: https://localhost:7116
+
+  - Api: http://localhost:5008
 
 ## API Endpoints
 
 Authorize first using Swagger then taken the token.
-Admin User: { "username": "admin", "password": "adminpass" }
+
+Admin User: 
+```{ "username": "admin", "password": "adminpass" }```
+
+Pass above to the `/auth/login` end point to get token.
+
 
 ### Latest Exchange Rates
 - GET `/api/v1/exchange-rates/latest?baseCurrency=EUR`
