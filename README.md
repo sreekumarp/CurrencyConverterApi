@@ -16,6 +16,9 @@ currency conversion api.
 
   - Api: http://localhost:5008
 
+## Unit Test
+```dotnet test CurrencyConverterApi.Tests/CurrencyConverterApi.Tests.csproj```
+
 ## API Endpoints
 
 Authorize first using Swagger then taken the token.
@@ -30,8 +33,6 @@ Apply this ```Bearer <token>``` in `Authorization` Header (Can use Swagger Autho
 ### Latest Exchange Rates
 - GET `/api/v1/exchange-rates/latest?baseCurrency=EUR`
 
-## Unit Test
-```dotnet test CurrencyConverterApi.Tests/CurrencyConverterApi.Tests.csproj```
 
 ### Currency Conversion
 - POST `/api/v1/exchange-rates/convert`
